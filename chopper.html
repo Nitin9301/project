@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chopper</title>
+</head>
+
+<body>
+    <h2 style="background-color: antiquewhite;">Chopper</h2><br>
+    <h3 >what is chopper</h3>
+    <p>A chopper is a static device that converts fixed DC input voltage to a variable DC output voltage. It is
+        basically a high speed ON/OFF semiconductor switch. It may be thought of as DC equivalent of an AC transformer
+        since they behave in an identical manner.
+
+        Chopper is fed through a constant DC voltage source and its output is variable DC voltage. The average value of
+        output DC voltage may be less than or higher than the input DC voltage source. A simple diagram defining the
+        chopper is shown below.</p>
+    <img src="what-is-chopper6.png" alt="error">
+
+    <h3 style="color: brown;">Working principle of chopper</h3>
+    <p>
+        A chopper is a high-speed ON/OFF switch. It connected the source to load and disconnects the load from the
+        source at a fast speed. The following image represents the simple circuit to show its working principle.</p>
+    <img src="what-is-chopper2.png" alt="error">
+    <p> In this circuit, the switch SW is a chopper. This switch can be made ON and OFF at a very high speed. In this
+        way, the load may be connected and disconnected from the supply source Vs.
+
+        When the switch is ON, the load voltage is equal to the source voltage Vs, and when the switch is OFF, the load
+        voltage becomes equal to ZERO.
+
+        Thus, a chopped voltage across the load is obtained. The output voltage, i.e., the voltage across the load, is
+        shown in the below image.
+    </p>
+    <img src="what-is-chopper3.png" alt="error">
+    <p>When the switch SW is made OFF, the load current finds its path through freewheeling diode D. Therefore, diode D
+        acts as a short, and hence the voltage across the load becomes zero.
+
+        An inductor in the chopper is an essential thing. This inductor makes diode D forward biased when the switch SW
+        is OFF.
+
+        Even though the switch SW is made OFF, the load current doesn't become ZERO. Instead, it flows through the
+        freewheeling diode, inductor L, and load. The load current is continuous, as shown below.</p>
+    <img src="what-is-chopper4.png" alt="error">
+    <p>It may be seen from the above waveform of the output current of a chopper that, during ON time, the current
+        rises, whereas during OFF time, the load current io decays.
+
+        The time for which the chopper connects load from the source is called ON time (TON). Whereas the time for which
+        load is disconnected from the source is called OFF time (TOFF).</p>
+    <p><strong>duty cycle</strong><br>
+        A duty cycle is defined as the ratio of ON time to the total time. The symbol α denotes it. The total time is
+        the sum of ON and OFF <br>
+
+        Duty Cycle = TON / (TON+TOFF)<br>
+
+        Assuming (TON+TOFF) = T, the duty cycle is given as below.<br>
+
+        Duty Cycle, α = (TON / T)</p><br>
+    <h3 style="color: blueviolet;">Types of chopper</h3>
+    <p>here are mainly two types of chopper, Step-up and Step-down chopper. This classification is based on the average
+        DC output voltage of the chopper. However, based on quadrant operation, a chopper may be classified into five
+        different types: Class-A, Class-B, Class-C, Class-D, and Class-E chopper.</p>
+    <ol>
+        <li><strong>step down chopper</strong></li>
+        <p>A chopper whose average DC output voltage is less than the source voltage is called a step-down chopper.
+            Power
+            flows are always from source to load in this chopper.
+            Classification based on Quadrant Operation</p>
+        <li><strong>step up chopper</strong></li>
+        <p>It is a kind of chopper in which the average DC output voltage is more than the source voltage. In this
+            chopper,
+            power flows from load to source, and load contains a source of emf and should be inductive.</p>
+
+    </ol>
+    <h3 style="color: blue;">classification of chopper based of quaderant</h3>
+    <p>The chopper is a semiconductor static device, which essentially means that the direction of current flow is
+        restricted through it. But chopper circuit can be so modified that the operation of the chopper is achieved in
+        any of the four quadrants.
+
+        This gives us a ground to classify the choppers. Based on quadrant operation, there are five types of choppers:
+        Class-A, Class-B, Class-C, Class-D, and Class-E choppers.</p>
+    <ol style="font-size: medium;">
+        <li><a href="#" target="_blank">Class A Chopper</a> can only operate in the first quadrant. It means that the load current and
+            load voltage are
+            always positive. Load current always flows from source to load, and hence we can say that power is always
+            transferred from source to load. The step-down chopper is an example of a Class-A chopper.</li><br>
+
+        <li><a href="#" target="_blank">Class B Chopper</a> is confined in the second quadrant. It means that the chopper's output
+            voltage will be
+            positive, but the load current will be negative. Negative load current means io flows from load to source.
+            Thus, the power will always transfer from load to source in this type of chopper. The step-up chopper is a
+            Class-B chopper.</li><br>
+        <li><a href="#" target="_blank">Class C Chopper</a> can operate in both the first and second quadrant. The first quadrant
+            operation acts as a
+            step-down chopper, while in the second quadrant, it behaves as a step-up chopper. Class-C is obtained by
+            parallelly connecting Class-A & Class-B chopper. This type of chopper is also known as the Two Quadrant
+            Class-A chopper.</li><br>
+        <li><a href="#" target="_blank">Class D Chopper</a> can operate in the first and fourth quadrant. In this chopper, the
+            direction of load current
+            doesn't reverse. Instead, the average DC output voltage (Vo) may reverse. Power can either be transferred
+            from source to load or load to source. This chopper is also known as the Two Quadrant Class-B chopper.</li>
+        <br>
+        <li><a href="#" target="_blank">Class E chopper</a> is a universal chopper and can operate in all four quadrants. Four choppers
+            and four diodes
+            are required to make the circuit of the Class-E chopper. The necessary condition for this chopper is that
+            load must be inductive.</li><br>
+    </ol>
+</body>
+
+</html>
